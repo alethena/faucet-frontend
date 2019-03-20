@@ -10,7 +10,7 @@
 $mat-alethena2: (
   50: #ffffff,
   100: #b9ced5,
-  200: #8aaeb9,
+  200: #effbff,
   300: #5b8d9c,
   400: #387487,
   500: #155c72,
@@ -43,8 +43,8 @@ $mat-alethena2: (
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$app-primary: mat-palette($mat-alethena2);
-$app-accent:  mat-palette($mat-alethena2, 500);
+$app-primary: mat-palette($mat-alethena2, 300);
+$app-accent:  mat-palette($mat-alethena2, 800);
 
 // The warn palette is optional (defaults to red).
 $app-warn:    mat-palette($mat-red);

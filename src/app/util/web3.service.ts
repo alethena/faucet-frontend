@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import contract from 'truffle-contract';
-// import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 import { Big } from 'big.js';
 
 import { Subject } from 'rxjs';
@@ -18,7 +18,7 @@ export class Web3Service {
   // public ready = false;
 
 
-  constructor() {
+  constructor(private matSnackBar: MatSnackBar) {
     window.addEventListener('load', (event) => {
       this.bootstrapWeb3();
     });
@@ -35,7 +35,7 @@ export class Web3Service {
       this.web3 = new Web3(window.ethereum);
       try {
         this.MM = await window.ethereum.enable();
-        this.web3.eth.net.getNetworkType().then(console.log);
+        // this.web3.eth.net.getNetworkType().then(console.log);
         // this.setStatus('MetaMask enabled!');
       } catch {
         // this.setStatus('There was an error enabling MetaMask');
@@ -47,7 +47,7 @@ export class Web3Service {
       // Hack to provide backwards compatibility for Truffle, which uses web3js 0.20.x
       Web3.providers.WebsocketProvider.prototype.sendAsync = Web3.providers.WebsocketProvider.prototype.send;
       // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail); 
-      //rinkeby.infura.io/v3/2a59f4ddc9b14dd5b321f5fbee33f77d
+      // rinkeby.infura.io/v3/2a59f4ddc9b14dd5b321f5fbee33f77d
       this.web3 = new Web3(new Web3.providers.WebsocketProvider('wss://mainnet.infura.io/ws/v3/2a59f4ddc9b14dd5b321f5fbee33f77d'));
 
       // this.web3 = new Web3(new Web3.providers.WebsocketProvider("wss://mainnet.infura.io/ws/v3/2a59f4ddc9b14dd5b321f5fbee33f77d"));

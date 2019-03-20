@@ -1,0 +1,121 @@
+
+
+.bg-img {
+    background-image: linear-gradient(rgba(18, 84, 106, 0.356),rgb(18, 84, 106)), url(../assets/adventure-alps-altitude-1726970.jpg);
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px auto;
+}
+
+
+
+
+
+/* .bg-img-2 {
+    min-height: 100%;
+    // background-image: linear-gradient(#155c72ef, #155c72ee, #155c72a1), url(../src/resources/css/img/hero.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 92, 114, 0.945)), color-stop(rgba(21, 92, 114, 0.925)), to(rgba(21, 92, 114, 0.31))),
+      url(../src/resources/css/img/adventure-alps-altitude-1726970.jpg);
+    background-image: linear-gradient(rgba(21, 92, 114, 0.945), rgba(21, 92, 114, 0.925), rgba(21, 92, 114, 0.31)),
+      url(../src/resources/css/img/adventure-alps-altitude-1726970.jpg);
+    // background-image: linear-gradient(#12546af5, #12546ace, #12546a80), url(../src/resources/css/img/adventure-alps-altitude-1726970.jpg);
+  
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 40px 0px 20px 0px;
+  } */
+
+  .address {
+    height: 100%;
+    li {
+        list-style: none;
+    }
+    padding-left: 0px;
+} 
+
+.footer-nav {
+
+    float: right;
+    text-align: right;
+    display: inline-block;
+
+    a {
+        color: #fff;
+    }
+    li {
+        list-style: none;
+    }
+}
+
+
+
+
+.copyright {
+    text-align: center;
+    // margin-top: 50px;
+}
+
+footer {
+    color: #fff;
+    background-color: #063042;
+    font-size: 80%;
+    font-weight: 200;
+}
+.social {
+    text-align: center;
+    font-size: 200%;
+    color: #fff;
+    a {
+        padding: 12px;
+        color: #fff;
+
+    }
+
+    a:hover {
+        background-color: rgba(255, 255, 255, 0.062);
+        border-radius: 10%;
+    }
+    // .ion-social-linkedin:hover {
+    //     color: rgba(0, 118, 181, 0.11);
+    // }
+}
+
+@media only screen and (max-width: 800px)  {
+
+    .address {
+        // display: block;
+        text-align: center;
+        margin: 0px auto;
+        margin-top: 10px;
+        li {
+            float: left;
+            padding: 3px;
+        }
+        padding: 0px;
+    }
+
+    .address-container {
+        display: flex;
+        padding: 0px auto;
+        height: 100%;
+    }
+
+    .footer-nav {
+        display: block;
+        text-align: center;
+        margin: 0px auto;
+        margin-top: 10px;
+        li {
+            float: left;
+            padding: 5px;
+        }
+    }
+    .footer-nav-hide {
+        visibility: hidden;
+    }
+    
+ }

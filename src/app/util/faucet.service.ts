@@ -3,7 +3,7 @@ import { Web3Service } from './web3.service';
 declare let require: any;
 
 const Faucet_artifacts = require('../../assets/Faucet.json');
-const FaucetAddress = '0x000';
+const FaucetAddress = '0x8483e1cbCB1425fb881D2dBeD9d2005BAedbf1d3';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +19,5 @@ export class FaucetService {
     const hash = await FaucetInstance.getSomeXCHF.sendTransaction({ from: sender });
     console.log(hash);
   }
-
 
 }

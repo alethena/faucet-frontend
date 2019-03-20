@@ -23,7 +23,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/material-style.scss"
+              "src/material-style.scss",
+              "src/assets/ionicons.min.css"
             ],
             "scripts": []
           },

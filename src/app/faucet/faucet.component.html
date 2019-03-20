@@ -1,17 +1,79 @@
 <div class="row">
+  <a href="https://alethena.com"><img src="../../assets/alethena_white.png" alt="Alethena Logo" class="logo"></a>
   <div class="main-title">
     <h1>Alethena Testnet Faucet</h1>
   </div>
 </div>
 
 <div class="row">
-  <p>
-    If you would like to give Alethena's Share Dispenser a try without having to acquire real Ether and Crypto
-    Francs you can use our Rinkeby test net contracts.
+  <p class="top-text">
+    In order to use Alethena's Share Dispenser, you need Crypto Francs as well as a small amount of Ether. <br>
+    The <a href="https://rinkeby.etherscan.io/" target="_blank">Rinkeby</a> test network makes it easy to test smart
+    contracts without having to spend real money.
   </p>
+
+  <div class="spacer">
+  </div>
+  <p class="btm-text">
+    Follow the steps below to get Crypto Francs and Ether on the Rinkeby test network.
+  </p>
+  <!-- <p>
+    You have currently selected the following address: {{ selectedAddress }}
+  </p> -->
 </div>
 
+
 <div class="row">
+  <div class="col span-1-of-3">
+    <div class="bg">
+      <div class="num">
+        1
+      </div>
+      <div class="subtitle">
+        Get some Rinkeby testnet Ether
+      </div>
+      <button mat-raised-button color="accent" class="actions"><a href="https://faucet.rinkeby.io/" target="_blank">Get
+          Ether</a></button>
+    </div>
+  </div>
+  <div class="col span-1-of-3">
+    <div class="bg">
+      <div class="num">
+        2
+      </div>
+      <div class="subtitle">
+        Select the Rinkeby network in MetaMask
+      </div>
+      <button mat-raised-button color="accent" (click)="ShowHow()" class="actions">Show me how</button>
+      <!-- In your MetaMask, please select the Rinkeby network as follows: -->
+      <!-- <img src="../../assets/Network_selection.png" alt="MetaMask Selection" class="MM"> -->
+    </div>
+  </div>
+
+  <div class="col span-1-of-3">
+    <div class="bg">
+      <div class="num">
+        3
+      </div>
+      <div class="subtitle">
+        Get some Rinkeby testnet Crypto Francs
+      </div>
+      <button mat-raised-button color="accent" (click)="XCHFCall()" class="actions">Get XCHF</button>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col span-1-of-3">
+    &nbsp;
+  </div>
+  <div class="col span-1-of-3">
+    <button mat-raised-button color="primary" class="try-it"><a href="https://rinkeby-dispenser.alethena.com/"
+        target="_blank">Back To Dispenser</a></button>
+  </div>
+
+</div>
+
+<!-- <div class="row">
   <div class="col span-1-of-7"></div>
   <div class="col span-1-of-7 enum">1</div>
   <div class="col span-3-of-7">Get some Rinkeby testnet Ether <a href="https://faucet.rinkeby.io/"
@@ -30,8 +92,4 @@
 
 <div class="row xchf-button">
   <button mat-raised-button color="accent" (click)="XCHFCall()">Get XCHF</button>
-</div>
-
-
-
-
+</div> -->
