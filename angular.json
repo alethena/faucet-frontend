@@ -22,7 +22,7 @@
               "src/assets/adventure-alps-altitude-1726970.jpg"
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.scss",
               "src/material-style.scss",
               "src/assets/ionicons.min.css"
             ],
